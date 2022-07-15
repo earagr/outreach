@@ -96,8 +96,10 @@ function load_map() {
     [lat_max + 0.01, lon_max + 0.01]
   ];
   /* work out min and max pm25 values: */
-  var pm25_min = Math.min.apply(Math, pm25);
-  var pm25_max = Math.max.apply(Math, pm25);
+  var pm25_min = 1.00;
+  var pm25_max = 10.00;
+  /*var pm25_min = Math.min.apply(Math, pm25);
+  /*var pm25_max = Math.max.apply(Math, pm25);
   /* set color map min and max: */
   colormap['min'] = pm25_min;
   colormap['max'] = pm25_max;
@@ -129,7 +131,7 @@ function load_map() {
     /* draw a circle on the map for this point: */
     var my_circle = L.circle(
       [my_lat, my_lon], {
-        'radius': 5,
+        'radius': 50,
         'color': my_color,
         'weight': 0,
         'fillOpacity': 0.8
