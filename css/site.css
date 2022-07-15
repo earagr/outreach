@@ -1,0 +1,52 @@
+/* body: */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* map div: */
+.map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width:100%;
+}
+
+/* map controls: */
+.map_ctl {
+  padding: 2px 10px 2px 10px;
+  background: white;
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  text-align: right;
+}
+
+/* map colormap: */
+.map_colormap {
+  padding-top: 0.7em;
+  padding-bottom: 0.3em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.map_colormap p {
+  margin: 0;
+  padding: 0;
+}
+
+.map_colormap_color {
+  display: inline-block;
+  vertical-align: text-bottom;
+  width: 1.3em;
+  height: 1.3em;
+  margin: 0;
+  margin-right: 0.3em;
+}
+
+.map_colormap_value {
+  display: inline-block;
+  vertical-align: text-bottom;
+  text-align: center;
+  min-width: 6em;
+}
