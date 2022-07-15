@@ -18,7 +18,7 @@ var data = {
 /* define color map: */
 var colormap = {
   'min': 0,
-  'max': 100,
+  'max': 50,
   'colors': [
     '#1400ff', '#0064ff', '#00dbff', '#00ffac', '#00ff36',
     '#46ff00', '#bdff00', '#ffca00', '#ff5300', '#ff0029'
