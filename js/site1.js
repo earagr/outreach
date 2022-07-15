@@ -172,7 +172,9 @@ async function load_data() {
   /* remove NaN values ... loop through data: */
   for (var i = 0; i < json_data['lats'].length; i++) {
     /* if pm25 value is not 'NaN': */
-    if (json_data['pm25'][i] != 'NaN') {
+    if ((json_data['pm25'][i] != 'NaN') &&
+         (json_data['lats'][i] != 'NaN') &&
+         (json_data['lons'][i] != 'NaN')) {
       /* store the values: */
       data['lats'].push(json_data['lats'][i]);
       data['lons'].push(json_data['lons'][i]);
