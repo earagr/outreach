@@ -129,7 +129,7 @@ function load_map() {
     /* draw a circle on the map for this point: */
     var my_circle = L.circle(
       [my_lat, my_lon], {
-        'radius': 50,
+        'radius': 5,
         'color': my_color,
         'weight': 0,
         'fillOpacity': 0.8
